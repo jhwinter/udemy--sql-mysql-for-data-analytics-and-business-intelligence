@@ -63,10 +63,6 @@ WHERE YEAR(hire_date) = 2000;
 /* Exercise 5
 Retrieve a list with all employees from the ‘titles’ table who are engineers. 
 Repeat the exercise, this time retrieving a list with all employees from the ‘titles’ table who are senior engineers.
-
-After LIKE, you could indicate what you are looking for with or without using parentheses. Both options are
-correct and will deliver the same output. We think using parentheses is better for legibility and that’s why
-it is the first option we’ve suggested.
 */
 USE employees;
 SELECT e.*, t.title
@@ -80,7 +76,9 @@ JOIN employees e ON t.emp_no = e.emp_no
 WHERE t.title LIKE '%Senior Engineer%';
 
 
+/* Exercise 6
 
+*/
 
 
 
